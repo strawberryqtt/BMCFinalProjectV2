@@ -1,0 +1,45 @@
+name: ecommerce_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # ✅ Updated to latest compatible Firebase versions
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2
+  cloud_firestore: ^6.1.0
+  provider: ^6.1.5
+  flutter_native_splash: 2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+# ✅ Flutter Native Splash Configuration
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/new_logo.png
+
+  android_12:
+    image: assets/images/new_logo.png
+    color: "#FFFFFF"
+
+  # ✅ Must be a boolean, not a map
+  web: true
